@@ -2,70 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page title</title>
+    <title>Rental Application Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
-        <form action="https://formspree.io/f/xrbelpda" method="post">
+        <form id="rental-form" action="https://formspree.io/f/xyzgypyl" method="post">
             <div class="fill">
                 <h1>Rental Application Form</h1>
                 <br>
                 <label>Full name</label>
                 <br>
-          <input type="text" placeholder="First name" required>
-          <br>
-          <input type="text" placeholder="Last name" required>
-          <br>
-          <label>Email</label>
+                <input type="text" id="first-name" name="first-name" placeholder="First name" required>
                 <br>
-          <input type="email" placeholder="example@gmail.com" required>
-          <br>
-          <select>
-              <option>Male</option>
-              <option>Female</option>
-          </select>
-          <br>
-          <br>
-          <label>Phone number</label>
-          <input type="number" placeholder="0000-000-0000" required>
-          <br>
-          <label>SSN</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
                 <br>
-          <input type="number" placeholder="####-##-####" required>
-        
-          <h4>We will only use thi to check your CREDIT SCORE</h4>
-          <br>
-          <label>Current Address</label>
+                <label>Email</label>
                 <br>
-          <input type="text" placeholder="Address line 1" required>
-          <br>
-          <input type="text" placeholder="Address line 2" required>
-          <br>
-          <input type="text" placeholder="City" required>
-          <br>
-          <input type="text" placeholder="State / Province / Region"  required>
-          <br>
-          <input type="text" placeholder="Postal code / Zip Code" required>
-          <br>
-          <label>Date Of Birth</label>
-          <br>
-          <input type="date"required>
-          <br>
-          <label>Emergency Contact Name</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
                 <br>
-          <input type="text" placeholder="First name" required>
-          <br>
-          <input type="text" placeholder="Last name" required>
-          <br>
-          <label>Phone Number</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
                 <br>
-          <input type="number" placeholder="####-###-####" required>
-          <br>
-          <br>
-          <br>
-          <button>Submit</button>
+                <br>
+                <label>Phone number</label>
+                <input type="tel" id="phone-number" name="phone-number" placeholder="0000-000-0000" required>
+                <br>
+                <label>SSN</label>
+                <br>
+                <input type="number" id="ssn" name="ING" placeholder="####-##-####" required>
+                <h4>We will only use this to check your CREDIT SCORE</h4>
+                <br>
+                <label>Current Address</label>
+                <br>
+                <input type="text" id="address-line-1" name="A1" placeholder="Address line 1" required>
+                <br>
+                <input type="text" id="address-line-2" name="a2" placeholder="Address line 2">
+                <br>
+                <input type="text" id="city" name="city" placeholder="City" required>
+                <br>
+                <input type="text" id="state" name="state" placeholder="State / Province / Region" required>
+                <br>
+                <input type="text" id="postal-code" name="pC" placeholder="Postal code / Zip Code" required>
+                <br>
+                <label>Date Of Birth</label>
+                <br>
+                <input type="date" id="date-of-birth" name="date-of-birth" required>
+                <br>
+                <label>Emergency Contact Name</label>
+                <br>
+                <input type="text" id="emergency-contact-first-name" name="eCE" placeholder="First name" required>
+                <br>
+                <input type="text" id="emergency-contact-last-name" name="eCL" placeholder="Last name" required>
+                <br>
+                <label>Phone Number</label>
+                <br>
+                <input type="tel" id="emergency-contact-phone-number" name="eCN" placeholder="####-###-####" required>
+                <br>
+                <br>
+                <button type="submit">Submit</button>
             </div>
         </form>
     </div>
